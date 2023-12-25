@@ -221,8 +221,8 @@
         padding: 0 !important;
     }
     #details{
-        gap : 0px !important;
-        padding: 5px !important;
+        gap : 3px !important;
+        padding: 8px !important;
     }
 
 }
@@ -252,6 +252,17 @@
     #project-details #platforms-used {
         display: none;
     }
+
+    #number {
+        margin-bottom: 8px;
+        padding: 0 30px 3px 0;
+    }
+    .footer_heading{
+        margin-bottom: 3px;
+    }
+    #status {
+        padding: 7px 12px;
+    }
     
 }
 
@@ -267,15 +278,15 @@
     }
 
     .column-span .hover-zoom #project-img, .column-span .hover-zoom:hover #project-img {
-        margin: 10px !important;
-        padding-right: 2px !important;
+        margin: 15px !important;
+        padding-right: 5px !important;
     }
     #numbering,.column-span .hover-zoom:hover #numbering {
         font-size: 1.15rem;
         padding: 15px !important;
     }
     .project-card #project-name{
-        font-size: 1.15rem;
+        font-size: 1.2rem;
     }
     #platforms-used{
         font-size: 0.9rem;
