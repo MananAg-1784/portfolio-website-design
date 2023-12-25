@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Agarwal</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"
+        integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="shortcut icon" href="https://assets-global.website-files.com/60f5a97b9e66c2b92c76a14e/63ebe827e2c217f3badc705c_favicon.png" type = "image/x-icon">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <nav class="flex row">
+        <a href="projects.html" id="nav-name">
+                <div>Manan</div>
+                <div>Agarwal</div>
+        </a>
+        <div id="drop-down" class="flex">
+            <img src="assets/nav_bar_horizontal_lines.png" alt="" width = "25">
+        </div>
+        <div id="nav-list" class="flex row">
+            <a href="index.html">Projects.</a>
+            <a href="about.html"  class="active">About.</a>
+            <a href="#">Resume.</a>
+        </div>
+    </nav>
+
+    <section class="about flex row" id="about">
+        <div id="profile_pic" class="flex">
+            <img src="assets/christ_blazer_red_benches -2.jpg" alt="" style="height:380px;">
+        </div>
+        <div id="introduction" class="flex column">
+            <div id="intro-greet">HI, I'M MANAN</div>
+            <div id="intro-para">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum quos explicabo dicta inventore, cupiditate quia quae cumque beatae expedita officiis quo quidem, dolorem rerum ullam mollitia aut fugit laboriosam iure laudantium neque fuga?
+                </p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aperiam quos delectus, officia natus eligendi ut harum minima voluptate eum.</p>
+            </div>
+            <div id="intro-contact">
+                <div style="font-weight: 500; margin-bottom: 6px;">
+                    Let's Connect :)
+                </div>
+                <div id="intro-para">mananagarwal1784@gmail.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="flex row about">
+        <div class="flex column" id="introduction">
+            <div id="hobby-heading">When I'm not coding you can find me ...</div>
+            <div id="hobby-list">
+                <li>😁 Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>😋 Lorem ipsum dolor sit amet.</li>
+                <li>😪 Lorem ipsum dolor sit amet consectetur.</li>
+                <li>😶 Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+                <li>😎 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error!</li>
+                <li>😍 Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                <li>😏 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>😏 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>😏 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                <li>😏 Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            </div>
+        </div>
+        <div id="illustration">
+           <img src="assets/man with background.jpg" alt="">
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="flex row">
+        <div>
+            <div class="footer_heading">MANAN AGARWAL</div>
+            <div class="footer_content">mananagarwal1784@gmail.com</div>
+        </div>
+        <div>
+            <div class="footer_heading">SOCIAL</div>
+            <div class="footer_content flex row" style="gap: 15px;">
+                <a href="https://github.com/MananAg-1784" target="_blank">GitHub</a>
+                <div>|</div>
+                <a href="https://www.linkedin.com/in/manan-agarwal-219920251/" target="_blank">LinkedIn</a>
+                <div>|</div>
+                <a href="https://dribbble.com/_Manan_" target = "_blank">Dribble</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#drop-down").on("click", function () {
+            $("#nav-list").slideToggle("display-flex");
+            $('#nav-list').css('display','flex');
+        });
+    });
+</script>
+</html>
