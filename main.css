@@ -1,11 +1,11 @@
 @font-face{
     font-family : 'WorkSans';
-    src : url(static/WorkSans-Regular.ttf);
+    src : url('static/WorkSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'WorkSans-SemiBold';
-    src: url(static/WorkSans-SemiBold.ttf)
+    src: url('static/WorkSans-SemiBold.ttf')
 }
 
 :root{
