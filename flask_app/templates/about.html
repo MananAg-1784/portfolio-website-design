@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<section class="about flex row" id="about">
+    <div id="profile_pic" class="flex">
+        <img src="{{ url_for('static',filename='assets/christ_blazer_red_benches -2.jpg') }}" alt="" style="height:380px;">
+    </div>
+    <div id="introduction" class="flex column">
+        <div id="intro-greet">HI, I'M MANAN</div>
+        <div id="intro-para">
+            <p>
+                As a soon-to-be graduate with a Bachelor's in Computer Application (BCA) from Christ University, Bangalore, my fascination with computing blossomed alongside the global shift towards digitization and automation, driven by Artificial Intelligence. Inspired by visionaries like Elon Musk, my journey commenced with designing websites and evolved into becoming a full-stack developer. Eager to explore the endless possibilities that this dynamic field offers, 
+            </p>
+            <p>I am driven by the enthusiasm to continually learn and embrace the marvels that the world of technology has to offer.</p>
+        </div>
+        <div id="intro-contact">
+            <div style="font-weight: 500; margin-bottom: 6px;">
+                Let's Connect :)
+            </div>
+            <div id="intro-para">mananagarwal1784@gmail.com</div>
+        </div>
+    </div>
+</section>
+
+<section id="hobbies" class="flex row about">
+    <div class="flex column" id="introduction">
+        <div id="hobby-heading">When I'm not coding you can find me ...</div>
+        <div id="hobby-list">
+            <li>☕ Sipping a cup of tea at some Tapri.</li>
+            <li>🌴 Out exploring asthetic cafes and going out on vacations</li>
+            <li>😍 Playing with my dog.</li>
+            <li>⛱ Spending time on the beach, listening to the waves</li>
+            <li>😪 Taking a nap anytime i get a chance.</li>
+            <li>😁 Chilling out with friends, sharing stories and laughter.</li>
+            <li>😎 Trying to experiment with new things and hopping for a success</li>
+            <li>🌃 Enjoying the night time sky while listiening to lofi music </li>
+            <li>🚢 Watching new episode of One Piece - '私は海賊王になるつもりです'</li>
+        </div>
+    </div>
+    <div id="illustration">
+        <img src="{{ url_for('static',filename='assets/man with background.jpg') }}" alt="">
+    </div>
+</section>
+
+{% endblock %}

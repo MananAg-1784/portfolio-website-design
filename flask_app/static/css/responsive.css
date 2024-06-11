@@ -1,0 +1,306 @@
+#drop-down{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    :root{
+        --max-width: 750px;
+    }
+
+    #illustration img{
+        width: 290px;
+    }
+
+    #greeting{
+        font-size: 2.5rem;
+    }
+    #intro{
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    :root{
+        --side-margin: 50px;
+    }
+    nav{
+        align-items: center;
+    }
+    #drop-down{
+        display: inline-block;
+    }
+    
+    #nav-list{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        background: white;
+        width: 100%;
+        padding: 25px 0px;
+        align-items: flex-start;
+    }
+    nav{
+        position: relative;
+    }
+    .footer_heading{
+        font-size: 1.1rem;
+    }
+    .footer_content a{
+        font-size: 1rem;
+    }
+
+    .about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #introduction{
+        max-width: 90%;
+    }
+    #hobbies{
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+    }
+
+    #inside-div{
+        display: none !important;
+    }
+    .span-2{
+        grid-column: span 1 !important;
+    }
+    .span-2 #project-img > div {
+        align-items: baseline !important;
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    :root{
+        --side-margin: 20px;
+    }
+    .span-2 #project-img > div {
+        align-items: center !important;
+    }
+    #nav-name{
+        font-size: 1.4rem;
+    }
+
+    #arrow{
+        transform: scale(0.9);
+        margin: 75px var(--side-margin);
+    }
+    #illustration img{
+        width: 250px;
+    }
+
+    #introduction{
+        max-width: 100%;
+    }
+    #greeting{
+        font-size: 1.8rem;
+    }
+
+    #profile_pic img{
+        height: auto !important;
+        width: 90%; 
+    }
+
+    #intro-greet{
+        font-size: 1.55rem;
+    }
+    #intro-para{
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    #hobby-list li{
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Skills and projects */
+
+@media only screen and (max-width: 1000px){
+    .project-card{
+        height: 470px !important;
+    }
+    .column-span .hover-zoom #project-img {
+        grid-auto-columns: 58% !important;
+    }
+    .column-span, .column-span .hover-zoom {
+        height: auto !important;
+    }
+}
+@media only screen and (max-width: 800px){
+    #tech-logo img{
+        height: 90px;
+    }
+    #skill-card{
+       padding: 12px;
+    }
+    #numbering{
+        font-size: 1.5rem;
+    }
+
+    #project-cards-grid{
+        grid-template-columns: 1fr !important;
+    }
+    .column-span{
+        grid-column: span 1 !important;
+    }
+
+    .column-span .hover-zoom:hover #project-img{
+        padding: 0 10px 15px 0 !important;
+     }
+
+    .column-span .hover-zoom #project-img {
+        grid-auto-columns: 85% !important;
+        grid-auto-flow: row !important;
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+        justify-content: center !important;
+        padding-right: 10px !important;
+        gap: 30px !important;
+    }
+
+    #project_{
+        height: max-content !important;
+    }
+    .column-span .hover-zoom{
+        height: 525px !important;
+    }
+    
+    .blender-projects .hover-zoom #project-img{
+        gap: 10px !important;
+    }
+    .blender-projects .hover-zoom{
+            height: 650px !important;
+    }
+    .blender-projects .hover-zoom #project-img{
+        grid-template-columns: 87% !important;
+    }
+}
+@media only screen and (max-width: 700px){
+    .blender-projects .hover-zoom #project-img{
+        grid-template-columns: 92% !important;
+    }
+    .blender-projects .hover-zoom{
+        height: 600px !important;
+    }
+    .column-span .hover-zoom #project-img {
+        grid-auto-columns: 100% !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .blender-projects .hover-zoom{
+        height: 550px !important;
+    }
+    .column-span .hover-zoom{
+        height: 500px !important;
+    }
+    .blender-projects .hover-zoom #project-img{
+        grid-template-columns: 95% !important;
+    }
+    .heading{
+        font-size: 1.8rem;
+        padding: 35px 0px;
+    }
+    
+    #skill-cards-grid{
+        grid-template-columns: 1fr 1fr !important;
+        gap: 15px;
+    }
+    #skill-card{
+        flex-direction: row !important;
+        justify-content: space-around;
+    }
+    #tech-logo img{
+        height: 60px;
+    }
+    #tech-name{
+        font-size: 1.1rem;
+    }
+    #numbering, .project-card #project-name{
+        font-size: 1.3rem;
+    }
+    .project-card #project-desc{
+        font-size: 0.9rem;
+        padding: 0 !important;
+    }
+    #details{
+        gap : 3px !important;
+        padding: 8px !important;
+    }
+
+}
+@media only screen and (max-width: 500px){
+    .column-span .hover-zoom #project-img {
+        gap: 20px !important;
+    }
+    .blender-projects .hover-zoom #project-img {
+        gap: 10px !important;
+    }
+    .blender-projects .hover-zoom #project-img{
+        grid-template-columns: 100% !important;
+    }
+    .blender-projects .hover-zoom{
+        height: 600px !important;
+    }
+    .column-span .hover-zoom{
+        height: 550px !important;
+    }
+    #project-details{
+        padding: 25px;
+        gap: 5px;
+    }
+    .column-span #project-details{
+        padding: 15px !important;
+    }
+    #project-details #platforms-used {
+        display: none;
+    }
+
+    #number {
+        margin-bottom: 8px;
+        padding: 0 30px 3px 0;
+    }
+    .footer_heading{
+        margin-bottom: 3px;
+    }
+    #status {
+        padding: 7px 12px;
+    }
+    
+}
+
+@media only screen and (max-width: 450px){
+    #skill-card{
+        flex-direction: column !important;
+    }
+    .single-project {
+        height: 375px !important;
+    }
+    #project-img img {
+        width: 100%;
+    }
+
+    .column-span .hover-zoom #project-img, .column-span .hover-zoom:hover #project-img {
+        margin: 15px !important;
+        padding-right: 5px !important;
+    }
+    #numbering,.column-span .hover-zoom:hover #numbering {
+        font-size: 1.15rem;
+        padding: 15px !important;
+    }
+    .project-card #project-name{
+        font-size: 1.2rem;
+    }
+    #platforms-used{
+        font-size: 0.9rem;
+    }
+
+}
